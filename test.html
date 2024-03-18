@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheduling Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .day {
+    margin-bottom: 30px;
+  }
+  .day-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .event {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .event-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .event-time {
+    font-size: 14px;
+    color: #666;
+  }
+  .event-description {
+    font-size: 14px;
+    color: #444;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Event Schedule</h1>
+  <div class="day">
+    <div class="day-title">Day 1</div>
+    <div class="event">
+      <div class="event-name">Opening Ceremony</div>
+      <div class="event-time">9:00 AM - 10:00 AM</div>
+      <div class="event-description">Welcome speech and introduction of keynote speakers.</div>
+    </div>
+    <div class="event">
+      <div class="event-name">Keynote Address</div>
+      <div class="event-time">10:00 AM - 11:00 AM</div>
+      <div class="event-description">Keynote speech by renowned industry expert.</div>
+    </div>
+    <div class="event">
+      <div class="event-name">Networking Break</div>
+      <div class="event-time">11:00 AM - 11:30 AM</div>
+      <div class="event-description">Refreshments and networking session.</div>
+    </div>
+    <!-- Add more events as needed -->
+  </div>
+  <div class="day">
+    <div class="day-title">Day 2</div>
+    <div class="event">
+      <div class="event-name">Workshop: Machine Learning</div>
+      <div class="event-time">9:00 AM - 12:00 PM</div>
+      <div class="event-description">Hands-on workshop on machine learning techniques.</div>
+    </div>
+    <div class="event">
+      <div class="event-name">Panel Discussion: Future of Technology</div>
+      <div class="event-time">1:00 PM - 2:00 PM</div>
+      <div class="event-description">Discussion on emerging trends and technologies.</div>
+    </div>
+    <div class="event">
+      <div class="event-name">Closing Ceremony</div>
+      <div class="event-time">3:00 PM - 4:00 PM</div>
+      <div class="event-description">Closing remarks and thank you note.</div>
+    </div>
+    <!-- Add more events as needed -->
+  </div>
+</div>
+</body>
+</html>
