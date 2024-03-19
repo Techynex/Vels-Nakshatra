@@ -1,0 +1,219 @@
+<!doctype html>
+<!--[if lte IE 8 ]><html class="ie-oldie"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Template Documentation - Operali</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="header" class="section">
+		<div class="container">
+			<div class="grid1 align-center">
+				<h1>Operali</h1>
+				<p>Documentation for the HTML Template</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="nav">
+		<div class="container">
+			<div class="grid4">
+				<ul class="nobottom">
+					<li class="subtitle"><a href="#intro-requirements">Introduction</a></li>
+					<li><a href="#intro-requirements">Requirements</a></li>
+					<li><a href="#intro-template-files">Template Files</a></li>
+					<li><a href="#intro-install">Install via FTP</a></li>
+				</ul>
+			</div>
+			<div class="grid4">
+				<ul class="nobottom">
+					<li class="subtitle"><a href="#setup-style">Basic Setup</a></li>
+					<li><a href="#setup-style">Style Settings</a></li>
+					<li><a href="#setup-markup">Markup Structure</a></li>
+					<li><a href="#setup-seo">SEO Settings</a></li>
+				</ul>
+			</div>
+			<div class="grid4">
+				<ul class="nobottom">
+					<li class="subtitle"><a href="#configuration">Configuration</a></li>
+					<li><a href="#configuration-css">CSS Styling</a></li>
+					<li><a href="#configuration-js">JavaScript Widgets</a></li>
+					<li><a href="#configuration-tips">Tips &amp; Tricks</a></li>
+				</ul>
+			</div>
+			<div class="grid4">
+				<ul>
+					<li class="subtitle"><a href="#video-guides">Further Info</a></li>
+					<li><a href="#credits">Credits</a></li>
+					<li><a href="#support">Further Support</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+
+			<div class="clear-big"></div>
+			<div class="grid1 section-header">
+				<h3>Introduction</h3>
+			</div>
+
+			<div id="intro-requirements" class="grid2">
+				<h4>Requirements</h4>
+				<p><strong>Before we dive in, I want to thank and congratulate you on purchasing one of my items. I truly appreciate your support and I'll do my best to provide you with an outstanding service.</strong></p>
+				<p>Let's go over the minimum requirements that you will need in order to have a fully functional site using this template running in no time.</p>
+				<ul>
+					<li>An available domain - I recommend <a href="https://www.namecheap.com/?aff=77708" title="Namecheap" target="_blank">namecheap</a></li>
+					<li>Hosting provider - I recommend <a href=" https://www.greengeeks.com/track/u149499" target="_blank">greengeeks</a></li>
+					<li>FTP program (FileZilla, Cyberduck etc)</li>
+					<li>The template files that you downloaded from <a href="https://templatemonster.com" target="_blank">templatemonster.com</a></li>
+				</ul>
+				<p class="note">To customize the template you'll need basic HTML, CSS or JavaScript knowledge (depending on the task). If you need help, I may be able to help on a freelance basis to deliver your custom project requirements for a small fee.</p>
+			</div>
+
+			<div id="intro-template-files" class="grid2">
+				<h4>Template Files</h4>
+				<p>After purchasing the template, your unzipped folder should have the following files contained within it.</p>
+				<ol class="flow">
+					<li>Available Files
+						<ol>
+							<li><strong>Documentation</strong> (folder with this help file)</li>
+							<li>
+								<strong>HTML</strong> (source files)
+								<ol>
+									<li><strong>assets</strong> (style and scripts)</li>
+									<li><strong>tmp</strong> (files for your reference, can be deleted)</li>
+									<li><strong>index.html</strong> (homepage HTML file)</li>
+									<li><strong>*.html</strong> (other HTML page files)</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="intro-install" class="grid1">
+				<h4>Install via FTP</h4>
+				<p>Copy the files and folders inside the <strong>HTML</strong> folder to your preferred web hosting location. This will get you started and you'll be able to modify the template, going forward, based on your specific needs.</p>
+			</div>
+
+			<div class="clear-big"></div>
+			<div class="grid1 section-header">
+				<h3>Basic Setup</h3>
+			</div>
+
+			<div id="setup-style" class="grid1">
+				<h4>Style Settings</h4>
+				<p>The <strong>style.css</strong> file is the base stylesheet and must be included (mandatory) in order for the site to display correctly. This base stylesheet depends on the icons library included via a web font (materialdesignicons.css). If you need to add your own custom style, you can optionally edit and include a <strong>style-custom.css</strong> (to preserve core files intact and allow proper template updates):</p>
+				<pre>&lt;link href=&quot;assets/css/materialdesignicons.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;assets/css/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;assets/css/style-custom.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
+				<p>The <strong>style.css</strong> file is well structured into corresponding sections and has a <strong>Table of contents</strong>, at the top, which you can refer to anytime. The stylesheet uses the <em>mobile-first technique</em> and it is <em>progressively enhanced</em> (using media queries) for larger displays as well.</p>
+			</div>
+
+			<div id="setup-markup" class="grid1">
+				<h4>Markup Structure</h4>
+				<p>This template has a responsive general layout that can fit well into the requirements of any project. You can customize the logo, menu, content and footer sections as you need - the markup is pretty much self documented. The general inner page template structure is (almost) the same throughout the template. Here it is:</p>
+				<pre>&lt;header class=&quot;site-header&quot; id=&quot;top-header&quot;&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+		&lt;div class=&quot;site-identity&quot;&gt;...&lt;/div&gt;
+		&lt;div id=&quot;menu-toggle&quot; class=&quot;mobile-menu-toggle&quot;&gt;...&lt;/div&gt;
+		&lt;nav class=&quot;main-navigation&quot;&gt;
+			&lt;ul id=&quot;menu-main&quot; class=&quot;menu&quot;&gt;...&lt;/ul&gt;
+		&lt;/nav&gt;
+		&lt;nav class=&quot;social-navigation&quot;&gt;
+			&lt;ul id=&quot;social-menu&quot; class=&quot;menu&quot;&gt;...&lt;/ul&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;main id=&quot;content&quot; class=&quot;site-content&quot;&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+		&lt;div class=&quot;entry-content&quot;&gt;...&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/main&gt;
+
+&lt;a href=&quot;#top-header&quot; id=&quot;scroll-to-top&quot; class=&quot;scroll-to-top&quot; title=&quot;Scroll to the top&quot;&gt;&lt;span class=&quot;arrow&quot;&gt;&lt;/span&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+
+&lt;footer class=&quot;site-footer&quot; id=&quot;footer&quot;&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+		&lt;div class=&quot;widget-area&quot;&gt;...&lt;/div&gt;
+		&lt;div class=&quot;copyright&quot;&gt;...&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+</pre>
+			</div>
+
+			<div id="setup-seo" class="grid1">
+				<h4>SEO Settings</h4>
+				<p>The template contains useful &lt;head&gt; information that you would probably want to edit for SEO reasons: title, description, keywords and favicon:</p>
+				<pre>&lt;title&gt;Title goes here&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Description entered for SEO&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;list of keywords&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;</pre>
+			</div>
+
+			<div class="clear-big"></div>
+			<div id="configuration" class="grid1 section-header">
+				<h3>Configuration</h3>
+			</div>
+
+			<div id="configuration-css" class="grid1">
+				<h4>CSS Styling</h4>
+				<p>Template uses only one optimized CSS file that uses mobile first approach. That means all the style is applied for mobile devices first and if the screen is bigger the template adapts its features as well. The stylesheet contains general reset rules so all browsers behave almost the same way. This stylesheet also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden at any time.</p>
+				<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited (or use a quick search in your favorite editor). Every element in the template can be customized easily this way. Make sure you check out the HTML markup first and then modify its style in the CSS file.</p>
+			</div>
+
+			<div id="configuration-js" class="grid1">
+				<h4>JavaScript Widgets</h4>
+				<p>This template imports one mandatory JavaScript file functions.js, which is used to initialize everything and add events to certain page elements. Here is the place where you can modify behaviour - make sure you study it for more information.</p>
+				<p>The template also includes some plugins in order to enhace the user experience - so make sure you check them out in their own separate file. Check out the documentation of each plugin for its complete set of options. Each page may include a different set of plugins at the end of the file (recommanded above the closing body tag) and initialized inline on the spot.</p>
+			</div>
+
+			<div id="configuration-tips" class="grid1">
+				<h4>Tips &amp; Tricks</h4>
+				<p>Here are a couple of tricks used in this template and information on how to apply them:</p>
+				<ol>
+					<li>all the colors and typography uses variables, so check out the top of the style.css file to change the main settings that will reflect thoughout the entire site style;</li>
+					<li>to make the template dark by default just add the following <strong>data-scheme</strong> attribute to the <strong>&lt;html&gt;</strong> element:
+<pre>&lt;html lang=&quot;en&quot; data-scheme=&quot;alt&quot;&gt;</pre></li>
+					<li>set active menu item: add a <strong>current-menu-item</strong> class to the active menu element (add it to the &lt;li&gt; element);</li>
+					<li>create a link button by adding a <strong>button</strong> class to an anchor like this: 
+<pre>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;</pre></li>
+					<li>follow more specific examples by looking at the markup or the styleguide.html file.</li>
+				</ol>
+			</div>
+
+			<div class="clear-big"></div>
+			<div class="grid1 section-header">
+				<h3>Further Info</h3>
+			</div>
+
+			<div id="credits" class="grid1">
+				<h4>Credits</h4>
+				<ul>
+					<li><a href="https://materialdesignicons.com/">Material Design Icons</a></li>
+					<li><a href="https://gist.github.com/drwpow/17f34dc5043a31017f6bbc8485f0da3c">Performant, 60FPS smooth scrolling</a></li>
+					<li><a href="https://fancyapps.com/docs/ui/fancybox/">Fancybox</a></li>
+					<li><a href="https://unsplash.com/">Unsplash</a></li>
+				</ul>
+				<p>Please note that the images shown in previews are not included in the download package due to licensing restrictions. All images used are intellectual property of their respective owners and are used only for preview purposes.</p>
+			</div>
+
+			<div id="support" class="grid1">
+				<h4>Further Support</h4>
+				<p>If you have any questions that are beyond the scope of this help file, please feel free to email via the Support tab of the item. Thank you and good luck with your work!</p>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

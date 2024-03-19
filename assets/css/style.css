@@ -4678,4 +4678,11 @@ input[type=search]::-webkit-search-decoration {
 	font-weight: bold;
 	font-size: 20px;
 }
+.regscan{
+margin: auto;
+width:50%
+}
 
+.regscan h4{
+	color:#ff3c1f;
+}
